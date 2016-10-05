@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Div Tag Template</title>
+	<title>Scratch</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -15,7 +15,7 @@
 <div id="wrapper">
 
 	<!-- page header - logo, title, links -->
-	<header id="mainHeader" onmouseover="tempflip()">
+	<header id="mainHeader">
 		<h1>Exploring Computer Science</h1>
 		<h2>My Collection of Programming Projects and Assignments</h2>
 		
@@ -59,16 +59,7 @@
 	
 </div><!-- end wrapper -->
 
-<script>
-  var k = 0;
 
-  function tempflip() {
-    var j = document.getElementById("mainHeader");
-    k += 180;
-    j.style.transform = "rotatex(" + k + "deg)";
-    j.style.transitionDuration = "0.5s"
-  }
-</script>
 
 </body>
 
