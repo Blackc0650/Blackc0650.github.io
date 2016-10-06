@@ -1,7 +1,8 @@
 		@charset "UTF-8";
 		body {
-			background: darkblue;
+			
 			font: 100% Georgia, Times, serif;
+			
 		}
 		h1 {
 			font: 300% Arial, Helvetica, sans-serif;
@@ -12,6 +13,7 @@
 			color: gray;
 		}
 		#wrapper {
+			cursor: url(https://openclipart.org/image/2400px/svg_to_png/222075/Black-Pixel-Mouse-Cursor-Arow-Fixed.png, auto);
 			width: 1100px;
 			margin: 0 auto;
 			padding: 0 50px;
