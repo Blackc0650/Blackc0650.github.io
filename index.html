@@ -38,13 +38,38 @@
 					<a href="index.html">Home</a>
 				</li>
 			</ul>
-		</div><!-- end Navigation links -->
+		</div><!-- end Nsavigation links -->
 		
 	</header><!-- end header -->
 	
 	<!-- Section Content -->
 	<section id="content">
-		<p>Replace this text with project and assignment examples</p>
+		<p>Hover over each box!</p>
+		<div id="slide1">
+		<h2>About Me!</h2>
+		</div>
+		<div id="about">
+		<p>I am Cameron! I love to go to the beach and surf and I am always up for a party! My favorite foods are hamburgers and milkshakes. I love the rain and I love holidays. Somethings that I dont like are long days and moderate weather.</p>
+		</div>
+		<div id="slide2">
+		<h2>My Hobbies</h2>
+		</div>
+		<div id="hobbies">
+		<p>Some of my hobbies include playing sports and researching things about the world. I love to play volleyball and I used to love to play soccer. I like to eat food also. My favorite resturante is Farms Burgers Co, Slates 50x50 and Ogies pizza! El Eggeri</p>
+		</div>
+		<div id="slide3">
+		<h2>Personal Intrests</h2>
+		</div>
+		<div id="pi">
+		<p>Some of my personal intrests include school and more school. Schools is really time consuming in my life but Im not saying I dont like school its just alot and overwhelming.</p>
+		</div>
+		<div id="slide4">
+		<h2>Sports</h2>
+		</div>
+		<div id="sports">
+		<p>I play soccer and volleyball but Im much better at volleyball. I play varsity beach and indoor for the school!</p>
+		</div>
+		
 	</section><!-- end Content -->
 	
 	<!-- Aside Content -->
@@ -61,5 +86,52 @@
 
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var stopframe;
+$(document).ready(function(){
+    $("#slide1").hover(function(){
+		$("#about").slideDown("slow");
+    });
+	$("#slide2").hover(function(){
+        $("#hobbies").slideDown("slow");
+    });
+	$("#slide3").hover(function(){
+        $("#pi").slideDown("slow");
+    });
+	$("#slide4").hover(function(){
+        $("#sports").slideDown("slow");
+    });
+	$("#slide1").mouseleave(function(){
+		$("#about").slideUp("slow");
+    });
+	$("#slide2").mouseleave(function(){
+        $("#hobbies").slideUp("slow");
+    });
+	$("#slide3").mouseleave(function(){
+        $("#pi").slideUp("slow");
+    });
+	$("#slide4").mouseleave(function(){
+        $("#sports").slideUp("slow");
+    });
+	//A little failure right here should have just used the slidetoggle for this instead of using 2 different methods
+	
+});
+</script>
+<style>
+	body {
+	}
+	#about {
+	display: none;
+	}
+	#hobbies {
+	display: none;
+	}
+	#pi {
+	display: none;
+	}
+	#sports {
+	display: none;
+	}
+</style>
 </html>

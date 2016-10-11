@@ -50,9 +50,9 @@
 	
 	<!-- Aside Content -->
 	<aside id="hobbies">
-		<p>Place things you like here; photos, links, videos, etc.</p>
+		<p id="enlargen">Click me to enlargen the game!</p>
 		<p>
-		<iframe id="rot" onmouseover="Rotate360()" width="485" height="402" src="https://scratch.mit.edu/projects/embed/120902778"></iframe></p>
+		<iframe id="game" width="485" height="402" src="https://scratch.mit.edu/projects/embed/120902778"></iframe></p>
 		
     
     
@@ -64,12 +64,6 @@
 	</footer><!-- end Footer -->
 	
 </div><!-- end wrapper -->
-<script>
-function Rotate360() {
-	var Selected = document.getElementById("#rot");
-	Selected.style.transform = "rotatex(360deg)"
-}
-</script>
 <style>
 #codescratch {
 	margin-top: 4px;
@@ -83,5 +77,15 @@ body {
 </style>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#enlargen").click(function(){
+        $("#game").animate({
+            right: '250px'
+        });
+    });
+});
+</script>
 
 </html>
