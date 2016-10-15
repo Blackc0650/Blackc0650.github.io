@@ -57,7 +57,7 @@
 		<div id="slide2">
 		<h2>My Hobbies</h2>
 		</div>
-		<div id="hobbies">
+		<div id="hobbie">
 		<p>Some of my hobbies include playing sports and researching things about the world. I love to play volleyball and I used to love to play soccer. I like to eat food also. My favorite resturante is Farms Burgers Co, Slates 50x50 and Ogies pizza! El Eggeri</p>
 		</div>
 		<div id="slide3">
@@ -77,12 +77,15 @@
 	
 	<!-- Aside Content -->
 	<aside id="hobbies">
-		<p>Place things you like here; photos, links, videos, etc.</p>
+		<p>One of my hobbies is to surf and have fun at the beach!</p>
+        <img src="images/surfpic.jpg" width="500" height="600"/>
+        <p>Another thing I like to do is go to the gym</p>
+        <img src="images/gympic.jpg" width="500" height="600"/>
 	</aside><!-- end Hobbies -->
 	
 	<!-- Footer Content -->
 	<footer id="pageFooter">
-		<p>author, contact info, copyright</p>
+		<p>Cameron Black || Period 2 ECS</p>
 	</footer><!-- end Footer -->
 	
 </div><!-- end wrapper -->
@@ -91,7 +94,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-var stopframe;
 $(document).ready(function(){
     $("#slide1").hover(function(){
 		$("#about").slideDown("slow");
@@ -109,13 +111,18 @@ $(document).ready(function(){
 		$("#about").slideUp("slow");
     });
 	$("#slide2").mouseleave(function(){
-        $("#hobbies").slideUp("slow");
+        $("#hobbie").slideUp("slow");
     });
 	$("#slide3").mouseleave(function(){
         $("#pi").slideUp("slow");
     });
 	$("#slide4").mouseleave(function(){
         $("#sports").slideUp("slow");
+
+    });
+    $("#pages").mouseover(function(){
+        $(this).fadeOut();
+        $(this).fadeIn();
     });
 	//A little failure right here should have just used the slidetoggle for this instead of using 2 different methods
 	
@@ -127,7 +134,7 @@ $(document).ready(function(){
 	#about {
 	display: none;
 	}
-	#hobbies {
+	#hobbie {
 	display: none;
 	}
 	#pi {
